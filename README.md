@@ -7,4 +7,4 @@
 - [力克全球关键人物关系与派系研究报告](research/力克全球关键人物关系与派系研究报告.md)  
   面向业务决策者，梳理现任/离任关键人物、同公司同行业上下级关系、并购后的派系变化，以及和人有关的公司文化。
 
-阅读说明见 [research/README.md](research/README.md)。同目录还有中国时尚+家具销售 VP 决策备忘，以及对中国 SaaS / AI 生态观点的顾问评估。
+阅读说明见 [research/README.md](research/README.md)。同目录还有中国时尚+家具销售 VP 决策备忘、对中国 SaaS / AI 生态观点的顾问评估，以及给巴黎的 Valia 与 AI 融合方案。
