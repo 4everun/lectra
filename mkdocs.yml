@@ -1,0 +1,59 @@
+# MkDocs 配置：把 research/ 目录下的研究报告渲染成一个中文文档网站
+site_name: 力克（Lectra）公开研究
+site_description: 对法国上市公司 Lectra（力克）的公开人物关系、任职轨迹与文化派系研究
+site_author: Lectra 公开研究项目
+
+# 文档源目录：所有 Markdown 报告都放在 research/ 下
+docs_dir: research
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant   # 页面间无刷新切换
+    - navigation.top       # 显示“回到顶部”按钮
+    - navigation.tracking  # 地址栏跟随当前小节
+    - toc.integrate        # 目录整合到左侧导航
+    - search.highlight     # 搜索结果高亮
+    - search.suggest       # 搜索联想
+    - content.code.copy    # 代码块一键复制
+  palette:
+    # 亮色 / 暗色两套配色，可在页面右上角切换
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: 切换到暗色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: 切换到亮色模式
+
+# 左侧导航结构（对应 research/ 下的各份报告）
+nav:
+  - 概览: README.md
+  - 主报告 · 全球关键人物关系与派系: 力克全球关键人物关系与派系研究报告.md
+  - 补采 · 公开人情圈（2026-08-25）: 力克公开人情圈补采_2026-08-25.md
+  - 补充 · 中国区公开人物（2026-08-25）: 中国区公开人物补充_2026-08-25.md
+  - 补录 · 机构股东与治理互动（2024–2026）: 2024-2026机构股东与治理互动补录.md
+
+plugins:
+  # 中文全文搜索：用 jieba 分词，separator 兼顾中英文与标点
+  - search:
+      separator: '[\s\u200b\-]'
+      lang:
+        - zh
+        - en
+
+markdown_extensions:
+  - toc:
+      permalink: true      # 每个标题旁生成锚点链接，方便分享定位
+  - tables
+  - admonition            # 支持“提示/警告”样式框
+  - pymdownx.details
+  - pymdownx.superfences

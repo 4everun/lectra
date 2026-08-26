@@ -1,0 +1,17 @@
+{
+  "name": "力克研究文档站点",
+  "install": "bash scripts/setup.sh",
+  "terminals": [
+    {
+      "name": "docs-server",
+      "command": ".venv/bin/mkdocs serve --dev-addr 0.0.0.0:8000",
+      "description": "MkDocs 本地预览服务器，把 research/ 下的报告渲染成网站，编辑后自动刷新（http://localhost:8000）"
+    }
+  ],
+  "ports": [
+    {
+      "name": "文档站点",
+      "port": 8000
+    }
+  ]
+}

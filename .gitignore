@@ -1,0 +1,9 @@
+# Python 虚拟环境（本地依赖，不入库）
+.venv/
+
+# MkDocs 构建产物（由 markdown 自动生成的静态站点）
+site/
+
+# Python 缓存
+__pycache__/
+*.pyc
