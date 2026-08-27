@@ -1,0 +1,5 @@
+# 文档站点依赖（用 MkDocs 把 Markdown 变成可浏览、可搜索的网站）
+# mkdocs-material：MkDocs 的 Material 主题，自带中文搜索与美观排版
+mkdocs-material==9.7.7
+# jieba：中文分词库，让站内搜索能正确切分中文词语
+jieba==0.42.1
